@@ -27,19 +27,19 @@ $faker->addProvider(new Faker\Provider\Youtube($faker));
 ```
 
 ```
-$faker->uri
+$faker->youtubeUri()
 // https://www.youtube.com/watch?v=KyXYWQ-B3zO
 
-$faker->shortUri
+$faker->youtubeShortUri()
 // https://youtu.be/watch?v=rsPyiZSzj3g
 
-$faker->embedUri
+$faker->youtubeEmbedUri()
 // https://www.youtube.com/embed/aUgKvcNS6en
 
-$faker->embedCode
+$faker->youtubeEmbedCode()
 // <iframe width="560" height="315" src="https://www.youtube.com/embed/aUgKvcNS6en" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-$faker->randomUri
+$faker->youtubeRandomUri()
 // https://youtu.be/watch?v=lctkDb05MKT
 ```
 
