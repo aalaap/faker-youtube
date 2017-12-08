@@ -1,0 +1,21 @@
+{
+    "name": "aalaap/faker-youtube",
+    "description": "Faker provider for generating fake YouTube video URLs",
+    "version": "1.0.0",
+    "license": "WTFPL",
+    "authors": [
+        {
+            "name": "Aalaap Ghag",
+            "email": "aalaap@gmail.com"
+        }
+    ],
+    "keywords": ["faker", "provider", "youtube"],
+    "require": {
+        "fzaninotto/faker": "~1.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Faker\\Provider\\": "src/"
+        }
+    }
+}
