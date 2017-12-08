@@ -50,4 +50,4 @@ This package is under the WTFPL license. Do whatever you want with it.
 ## Reporting an issue or a feature request
 
 Fork it, send a PR. Issues and feature requests are tracked in the
-[GitHub issue tracker]((https://github.com/aalaap/faker-youtube/issues).
+[GitHub issue tracker](https://github.com/aalaap/faker-youtube/issues).
