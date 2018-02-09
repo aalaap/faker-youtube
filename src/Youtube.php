@@ -16,17 +16,17 @@ class Youtube extends Base
 
     public function youtubeUri()
     {
-        return 'www.youtube.com/watch?v=' . $this->youtubeId();
+        return 'https://www.youtube.com/watch?v=' . $this->youtubeId();
     }
 
     public function youtubeShortUri()
     {
-        return 'youtu.be/' . $this->youtubeId();
+        return 'https://youtu.be/' . $this->youtubeId();
     }
 
     public function youtubeEmbedUri()
     {
-        return 'www.youtube.com/embed/' . $this->youtubeId();
+        return 'https://www.youtube.com/embed/' . $this->youtubeId();
     }
 
     public function youtubeEmbedCode()
