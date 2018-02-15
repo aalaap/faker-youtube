@@ -38,19 +38,24 @@ class Youtube extends Base
 
     public function youtubeRandomUri()
     {
-        switch ($this->shuffle('abc')) {
-            case 'a':
+        switch ($this->numberBetween(1,3)) {
+            case 1:
                 return $this->youtubeUri();
 
                 break;
 
-            case 'b':
+            case 2:
                 return $this->youtubeShortUri();
 
                 break;
 
-            case 'c':
+            case 3:
                 return $this->youtubeEmbedUri();
+
+                break;
+
+            default:
+                return $this->youtubeUri();
 
                 break;
         }
