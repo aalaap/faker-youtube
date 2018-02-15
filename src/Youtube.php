@@ -9,7 +9,7 @@ class Youtube extends Base
         $characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
             . 'abcdefghijklmnopqrstuvwxyz_-';
 
-        $id = substr(str_shuffle($characters), 0, 11);
+        $id = substr($this->shuffle($characters), 0, 11);
 
         return $this->generator->parse($id);
     }
@@ -36,21 +36,26 @@ class Youtube extends Base
             . ' allowfullscreen></iframe>';
     }
 
-    public function randomUri()
+    public function youtubeRandomUri()
     {
-        switch (mt_rand(1,3)) {
+        switch ($this->numberBetween(1,3)) {
             case 1:
                 return $this->youtubeUri();
 
                 break;
 
-            case 1:
+            case 2:
                 return $this->youtubeShortUri();
 
                 break;
 
-            case 1:
+            case 3:
                 return $this->youtubeEmbedUri();
+
+                break;
+
+            default:
+                return $this->youtubeUri();
 
                 break;
         }
