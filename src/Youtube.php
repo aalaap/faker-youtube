@@ -9,7 +9,7 @@ class Youtube extends Base
         $characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
             . 'abcdefghijklmnopqrstuvwxyz_-';
 
-        $id = substr(str_shuffle($characters), 0, 11);
+        $id = substr($this->shuffle($characters), 0, 11);
 
         return $this->generator->parse($id);
     }
