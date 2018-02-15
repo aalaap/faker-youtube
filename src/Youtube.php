@@ -36,7 +36,7 @@ class Youtube extends Base
             . ' allowfullscreen></iframe>';
     }
 
-    public function randomUri()
+    public function youtubeRandomUri()
     {
         switch (mt_rand(1,3)) {
             case 1:
