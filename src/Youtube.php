@@ -44,12 +44,12 @@ class Youtube extends Base
 
                 break;
 
-            case 1:
+            case 2:
                 return $this->youtubeShortUri();
 
                 break;
 
-            case 1:
+            case 3:
                 return $this->youtubeEmbedUri();
 
                 break;
