@@ -38,7 +38,10 @@ class Youtube extends Base
 
     public function youtubeChannelUri()
     {
-        return 'https://www.youtube.com/channel/' . $this->regexify(sprintf('[a-zA-Z0-9\-]{1,%s}', $this->numberBetween(1, 20)));
+        return sprintf('https://www.youtube.com/%s/%s',
+            $this->randomElement(['channel', 'user']),
+            $this->regexify(sprintf('[a-zA-Z0-9\-]{1,%s}', $this->numberBetween(1, 20)))
+        );
     }
 
     public function youtubeRandomUri()
