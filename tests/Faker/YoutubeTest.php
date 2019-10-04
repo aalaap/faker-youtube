@@ -37,6 +37,11 @@ class YoutubeTest extends TestCase
         $this->assertRegExp('#(http(s)??\:\/\/)?(www\.)?(youtube\.com\/embed\/)(.+)#', $this->faker->youtubeEmbedUri());
     }
 
+    public function testYoutubeChannelUri()
+    {
+        $this->assertRegExp('#(http(s)??\:\/\/)?(www\.)?(youtube\.com\/)(c\/|channel\/|user\/)([a-zA-Z0-9\-]{1,})#', $this->faker->youtubeChannelUri());
+    }
+
     public function testYoutubeEmbedCode()
     {
         $this->assertRegExp('#<iframe width="(\d+)" height="(\d+)" src="((http(s)??\:\/\/)?(www\.)?(youtube\.com\/embed\/)(.+))" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen><\/iframe>#', $this->faker->youtubeEmbedCode());
