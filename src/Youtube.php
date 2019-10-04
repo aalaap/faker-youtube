@@ -36,6 +36,11 @@ class Youtube extends Base
             . ' allowfullscreen></iframe>';
     }
 
+    public function youtubeChannelUri()
+    {
+        return 'https://www.youtube.com/channel/' . $this->regexify(sprintf('[a-zA-Z0-9\-]{1,%s}', $this->numberBetween(1, 20)));
+    }
+
     public function youtubeRandomUri()
     {
         switch ($this->numberBetween(1,3)) {
