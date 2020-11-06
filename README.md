@@ -23,7 +23,7 @@ composer require aalaap/faker-youtube
 
 ```php
 $faker = \Faker\Factory::create();
-$faker->addProvider(new Faker\Provider\Youtube($faker));
+$faker->addProvider(new \Faker\Provider\Youtube($faker));
 ```
 
 ```
